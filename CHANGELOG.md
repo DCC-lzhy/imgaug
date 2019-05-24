@@ -6,6 +6,11 @@
   maximum RAM demands).
 * Increased `max_distance` thresholds for `almost_equals()`, `exterior_almost_equals()` and `coords_almost_equals()` in `Polygon` and `LineString` from `1e-6` to `1e-4`.
   This should fix false-negative problems related to float inaccuracies.
+* [rarely breaking] Refactored `AddToHueAndSaturation` to clean it up.
+  Re-running old code with the same seeds will now produce different images.
+  The `value` parameter is now interpreted by the augmenter to return first the
+  hue and then the saturation value to add, instead of the other way round.
+  (This shouldn't affect anybody.)
 
 ## Fixes
  
