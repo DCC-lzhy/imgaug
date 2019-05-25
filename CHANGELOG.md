@@ -20,6 +20,8 @@
       on that order will now break.
       This also changes the output of `AddToHueAndSaturation.get_parameters()`.
 * Added `AddToHue`, a shortcut for `AddToHueAndSaturation(value_hue=...)`.
+* Added `AddToSaturation`, a shortcut for
+  `AddToHueAndSaturation(value_saturation=...)`.
 
 ## Fixes
  
