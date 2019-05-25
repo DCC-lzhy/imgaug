@@ -25,6 +25,8 @@
   `AddToHueAndSaturation(value_saturation=...)`.
 * Added `imgaug.augmenters.color.WithHueAndSaturation`.
 * Added `imgaug.augmenters.color.MultiplyHueAndSaturation`.
+* Added `imgaug.augmenters.color.MultiplyHue`.
+* Added `imgaug.augmenters.color.MultiplySaturation`.
 
 ## Fixes
  
