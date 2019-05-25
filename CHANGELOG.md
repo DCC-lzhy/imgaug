@@ -19,6 +19,7 @@
       This changes the order of arguments of the augmenter and code that relied
       on that order will now break.
       This also changes the output of `AddToHueAndSaturation.get_parameters()`.
+* Added `AddToHue`, a shortcut for `AddToHueAndSaturation(value_hue=...)`.
 
 ## Fixes
  
