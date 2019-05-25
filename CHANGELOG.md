@@ -6,7 +6,7 @@
   maximum RAM demands).
 * Increased `max_distance` thresholds for `almost_equals()`, `exterior_almost_equals()` and `coords_almost_equals()` in `Polygon` and `LineString` from `1e-6` to `1e-4`.
   This should fix false-negative problems related to float inaccuracies.
-* `AddToHueAndSaturation`
+* `imgaug.augmenters.color.AddToHueAndSaturation`
     * [rarely breaking] Refactored `AddToHueAndSaturation` to clean it up.
       Re-running old code with the same seeds will now produce different images.
     * [rarely breaking] The `value` parameter is now interpreted by the augmenter to return first the
@@ -19,9 +19,11 @@
       This changes the order of arguments of the augmenter and code that relied
       on that order will now break.
       This also changes the output of `AddToHueAndSaturation.get_parameters()`.
-* Added `AddToHue`, a shortcut for `AddToHueAndSaturation(value_hue=...)`.
-* Added `AddToSaturation`, a shortcut for
+* Added `imgaug.augmenters.color.AddToHue`, a shortcut for
+  `AddToHueAndSaturation(value_hue=...)`.
+* Added `imgaug.augmenters.color.AddToSaturation`, a shortcut for
   `AddToHueAndSaturation(value_saturation=...)`.
+* Added `imgaug.augmenters.color.WithHueAndSaturation`.
 
 ## Fixes
  
